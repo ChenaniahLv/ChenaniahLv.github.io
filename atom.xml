@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ChenaniahLv.github.io/"/>
-  <updated>2019-02-13T08:04:49.674Z</updated>
+  <updated>2019-02-13T10:11:44.100Z</updated>
   <id>http://ChenaniahLv.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>第一篇测试文章</title>
-    <link href="http://ChenaniahLv.github.io/2019/02/13/di-yi-pian-ce-shi-wen-zhang/"/>
-    <id>http://ChenaniahLv.github.io/2019/02/13/di-yi-pian-ce-shi-wen-zhang/</id>
-    <published>2019-02-13T07:56:40.000Z</published>
-    <updated>2019-02-13T08:04:49.674Z</updated>
+    <title>Python学习第3章-使用字符串</title>
+    <link href="http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-3-zhang-shi-yong-zi-fu-chuan/"/>
+    <id>http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-3-zhang-shi-yong-zi-fu-chuan/</id>
+    <published>2019-02-13T10:05:28.000Z</published>
+    <updated>2019-02-13T10:11:44.100Z</updated>
     
     <summary type="html">
     
@@ -29,17 +29,80 @@
       
         
         
-          &lt;p&gt;这是一篇作为测试用的文章，在它被成功发表之前谁也不能确定它是否能被别人看到，这种文章被称为“薛定谔的文章”！&lt;/p&gt;
-
+          &lt;h1 id=&quot;第三章-使用字符串&quot;&gt;&lt;a href=&quot;#第三章-使用字符串&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="测试" scheme="http://ChenaniahLv.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+      <category term="Python" scheme="http://ChenaniahLv.github.io/categories/Python/"/>
     
     
-      <category term="测试" scheme="http://ChenaniahLv.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="Python" scheme="http://ChenaniahLv.github.io/tags/Python/"/>
+    
+      <category term="教程" scheme="http://ChenaniahLv.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="学习笔记" scheme="http://ChenaniahLv.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python学习第2章-列表和元组</title>
+    <link href="http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-2-zhang-lie-biao-he-yuan-zu/"/>
+    <id>http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-2-zhang-lie-biao-he-yuan-zu/</id>
+    <published>2019-02-13T09:55:37.000Z</published>
+    <updated>2019-02-13T10:11:16.635Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;第二章-列表和元组&quot;&gt;&lt;a href=&quot;#第二章-列表和元组&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="http://ChenaniahLv.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://ChenaniahLv.github.io/tags/Python/"/>
+    
+      <category term="教程" scheme="http://ChenaniahLv.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="学习笔记" scheme="http://ChenaniahLv.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python学习第1章-快速上手：基础知识</title>
+    <link href="http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-1-zhang-kuai-su-shang-shou-ji-chu-zhi-shi/"/>
+    <id>http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-1-zhang-kuai-su-shang-shou-ji-chu-zhi-shi/</id>
+    <published>2019-02-13T09:37:56.000Z</published>
+    <updated>2019-02-13T09:51:47.801Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;第一章-快速上手：基础知识&quot;&gt;&lt;a href=&quot;#第一章-快速上手：基础知识&quot; class=&quot;headerlink&quot; title=&quot;第一章-快速上手：基础知识&quot;&gt;&lt;/a&gt;第一章-快速上手：基础知识&lt;/h1&gt;&lt;h2 id=&quot;1-1-交互式解释器&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="http://ChenaniahLv.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://ChenaniahLv.github.io/tags/Python/"/>
+    
+      <category term="教程" scheme="http://ChenaniahLv.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="学习笔记" scheme="http://ChenaniahLv.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
