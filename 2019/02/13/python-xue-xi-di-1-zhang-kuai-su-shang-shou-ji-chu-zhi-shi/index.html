@@ -501,27 +501,34 @@
 <span class="token operator">>></span><span class="token operator">></span> <span class="token number">0b1011010010</span>
 <span class="token number">722</span>
 </code></pre>
-<h2 id="1-4-变量"><a href="#1-4-变量" class="headerlink" title="1.4 变量"></a>1.4 变量</h2>变量是表示（或指示）特定值的名称，给变量赋予特定值的操作称为赋值，例如：<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> x <span class="token operator">=</span> <span class="token number">3</span>
+</li>
+</ul>
+<h2 id="1-4-变量"><a href="#1-4-变量" class="headerlink" title="1.4 变量"></a>1.4 变量</h2><p>变量是表示（或指示）特定值的名称，给变量赋予特定值的操作称为赋值，例如：</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> x <span class="token operator">=</span> <span class="token number">3</span>
 <span class="token operator">>></span><span class="token operator">></span> x <span class="token operator">*</span> <span class="token number">2</span>
 <span class="token number">6</span>
 </code></pre>
-注：在Python中，名称（标识符）只能由字母、数字和下划线（_）构成，且不能以数字打头。因此在Python中Plan9是合法的变量名，而9Plan不是。<h2 id="1-5-语句"><a href="#1-5-语句" class="headerlink" title="1.5 语句"></a>1.5 语句</h2>表达式<strong>是</strong>一些东西，而语句<strong>做</strong>一些事情。<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token number">2</span><span class="token comment" spellcheck="true">##表达式</span>
+<p>注：在Python中，名称（标识符）只能由字母、数字和下划线（_）构成，且不能以数字打头。因此在Python中Plan9是合法的变量名，而9Plan不是。</p>
+<h2 id="1-5-语句"><a href="#1-5-语句" class="headerlink" title="1.5 语句"></a>1.5 语句</h2><p>表达式<strong>是</strong>一些东西，而语句<strong>做</strong>一些事情。</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token number">2</span><span class="token comment" spellcheck="true">##表达式</span>
 <span class="token number">4</span>
 <span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">##语句，print实际上为一个函数，因此所说的print语句其实是函数调用。</span>
 <span class="token number">4</span>
 </code></pre>
-所有语句的根本特征：执行修改操作。例如，赋值语句改变变量，而print语句改变屏幕显示的外观。<h2 id="1-6-获取用户输入"><a href="#1-6-获取用户输入" class="headerlink" title="1.6 获取用户输入"></a>1.6 获取用户输入</h2>提供变量的值使用input函数，例如：<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> x <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"x: "</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">##括号中打印特定字符串以提示用户输入的信息。</span>
+<p>所有语句的根本特征：执行修改操作。例如，赋值语句改变变量，而print语句改变屏幕显示的外观。</p>
+<h2 id="1-6-获取用户输入"><a href="#1-6-获取用户输入" class="headerlink" title="1.6 获取用户输入"></a>1.6 获取用户输入</h2><p>提供变量的值使用input函数，例如：</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> x <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"x: "</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">##括号中打印特定字符串以提示用户输入的信息。</span>
 x<span class="token punctuation">:</span> <span class="token number">34</span>
 <span class="token operator">>></span><span class="token operator">></span> y <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"y: "</span><span class="token punctuation">)</span>
 y<span class="token punctuation">:</span> <span class="token number">42</span>
 <span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>int<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">*</span> int<span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token number">1428</span>
 </code></pre>
-<h2 id="1-7-函数"><a href="#1-7-函数" class="headerlink" title="1.7 函数"></a>1.7 函数</h2>函数犹如小型程序，可以用来执行特定的操作，例如乘方操作除了使用表达式”**”外，亦可以使用函数pow来实现：<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> pow<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+<h2 id="1-7-函数"><a href="#1-7-函数" class="headerlink" title="1.7 函数"></a>1.7 函数</h2><p>函数犹如小型程序，可以用来执行特定的操作，例如乘方操作除了使用表达式”**”外，亦可以使用函数pow来实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> pow<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
 <span class="token number">8</span>
 </code></pre>
-像这样使用函数称为调用函数：你向他提供实参，而它返回一个值。鉴于函数调用返回一个值，因此它们也是表达式。</li>
-</ul>
+<p>像这样使用函数称为调用函数：你向他提供实参，而它返回一个值。鉴于函数调用返回一个值，因此它们也是表达式。</p>
 <p>另常用函数如abs计算绝对值，round将浮点数圆整为与之最接近的整数：</p>
 <pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> abs<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">)</span>
 <span class="token number">10</span>
@@ -590,20 +597,23 @@ SyntaxError<span class="token punctuation">:</span> invalid syntax
 <span class="token operator">>></span><span class="token operator">></span> x <span class="token operator">+</span> y
 'Hello<span class="token punctuation">,</span> world!"
 </code></pre>
-<h3 id="1-10-3-字符串表示-str-和-repr"><a href="#1-10-3-字符串表示-str-和-repr" class="headerlink" title="1.10.3 字符串表示 str 和 repr"></a>1.10.3 字符串表示 str 和 repr</h3>Python在打印的所有字符串都有引号括起，但是在使用 print 函数时，字符串将没有引号括起，如果再加上表示换行符的编码\n，差别将更加明显。<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token string">"Hello,\nworld!"</span>
+</li>
+</ul>
+<h3 id="1-10-3-字符串表示-str-和-repr"><a href="#1-10-3-字符串表示-str-和-repr" class="headerlink" title="1.10.3 字符串表示 str 和 repr"></a>1.10.3 字符串表示 str 和 repr</h3><p>Python在打印的所有字符串都有引号括起，但是在使用 print 函数时，字符串将没有引号括起，如果再加上表示换行符的编码\n，差别将更加明显。</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token string">"Hello,\nworld!"</span>
 <span class="token string">'Hello,\nworld!'</span>
 <span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello,\nworld!"</span><span class="token punctuation">)</span>
 Hello<span class="token punctuation">,</span>
 world!
 </code></pre>
-通过两种不同的机制将值转换成了字符串。你可以通过使用函数str和repr直接使用这两种机制。使用str能以合理的方式将值转换成用户能够看懂的字符串。例如，尽可能将特殊字符编码转换为相应的字符。然而，使用repr时，通常会获得值的合法Python表达式表示。<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>repr<span class="token punctuation">(</span><span class="token string">"Hello,\nworld!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<p>通过两种不同的机制将值转换成了字符串。你可以通过使用函数str和repr直接使用这两种机制。使用str能以合理的方式将值转换成用户能够看懂的字符串。例如，尽可能将特殊字符编码转换为相应的字符。然而，使用repr时，通常会获得值的合法Python表达式表示。</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>repr<span class="token punctuation">(</span><span class="token string">"Hello,\nworld!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token string">'Hello,\nworld!'</span>
 <span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>str<span class="token punctuation">(</span><span class="token string">"Hello,\nworld!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 Hello<span class="token punctuation">,</span>
 world!
 </code></pre>
-<h3 id="1-10-4-长字符串、原始字符串和字节"><a href="#1-10-4-长字符串、原始字符串和字节" class="headerlink" title="1.10.4 长字符串、原始字符串和字节"></a>1.10.4 长字符串、原始字符串和字节</h3><h4 id="1-长字符串"><a href="#1-长字符串" class="headerlink" title="1.长字符串"></a>1.长字符串</h4>要表示很长的字符串（跨越多行的字符串），可使用三引号（而不是普通引号）或三个双引号。这让解释器能够识别表示字符串开始和结束位置的引号，因此字符串本身可包含单引号和双引号，无需使用反斜杠进行转义。</li>
-</ul>
+<h3 id="1-10-4-长字符串、原始字符串和字节"><a href="#1-10-4-长字符串、原始字符串和字节" class="headerlink" title="1.10.4 长字符串、原始字符串和字节"></a>1.10.4 长字符串、原始字符串和字节</h3><h4 id="1-长字符串"><a href="#1-长字符串" class="headerlink" title="1.长字符串"></a>1.长字符串</h4><p>要表示很长的字符串（跨越多行的字符串），可使用三引号（而不是普通引号）或三个双引号。这让解释器能够识别表示字符串开始和结束位置的引号，因此字符串本身可包含单引号和双引号，无需使用反斜杠进行转义。</p>
 <p><em>常规字符串也可横跨多行。只要在行尾加上反斜杠，反斜杠和换行符将被转义，即被忽略。这种处理手法也适用于表达式和语句。</em></p>
 <h4 id="2-原始字符串"><a href="#2-原始字符串" class="headerlink" title="2.原始字符串"></a>2.原始字符串</h4><ul>
 <li>原始字符串不以特殊方式处理反斜杠，因此在有些情况下很有用。在常规字符串中，反斜杠扮演着特殊角色：它对字符进行转义，让你能够在字符串中包含原本无法包含的字符。</li>
@@ -619,10 +629,14 @@ Let\<span class="token string">'s go!'</span><span class="token comment" spellch
 C<span class="token punctuation">:</span>\Program Files\fnord\foo\bar\
 <span class="token comment" spellcheck="true">##注意：在制定原始字符串时，可使用单引号或双引号将其括起，还可使用三引号将其括起。</span>
 </code></pre>
-<h4 id="3-Unicode、bytes和bytearray"><a href="#3-Unicode、bytes和bytearray" class="headerlink" title="3.Unicode、bytes和bytearray"></a>3.Unicode、bytes和bytearray</h4></li>
+</li>
+</ul>
+<h4 id="3-Unicode、bytes和bytearray"><a href="#3-Unicode、bytes和bytearray" class="headerlink" title="3.Unicode、bytes和bytearray"></a>3.Unicode、bytes和bytearray</h4><ul>
 <li>Python字符串使用Unicode编码来表示文本。大致而言，每个Unicode字符都用一个码点（code point）表示，而码点是Unicode标准给每个字符制定的数字。指定Unicode字符的通用机制为：使用16或32位的十六进制字面量（分别加上前缀\u或\U）或者使用字符的Unicode名称（\N{name}）。</li>
 <li>Python bytes字面量只支持ASCII标准中的128个字符，而余下的128个值必须用转义序列来表示。Unicode与ASCII在字母表规模不同。</li>
-<li>Python还提供了bytearray，它是bytes的可变版。<h2 id="1-11-小结"><a href="#1-11-小结" class="headerlink" title="1.11 小结"></a>1.11 小结</h2></li>
+<li>Python还提供了bytearray，它是bytes的可变版。</li>
+</ul>
+<h2 id="1-11-小结"><a href="#1-11-小结" class="headerlink" title="1.11 小结"></a>1.11 小结</h2><ul>
 <li>算法：从本质上说，编写计算机程序就是使用计算机能够理解的语言描述一种算法。这种对机器友好的描述被称为程序，主要由表达式和语句组成。</li>
 <li>表达式：表达式为程序的一部分，结果为一个值。简单表达式是使用运算符和函数将字面值组合起来得到的。通过组合简单的表达式，可创建复杂的表达式。表达式还可能包含变量。</li>
 <li>变量：变量是表示值的名称。通过赋值，可将新值赋给变量。赋值是一种语句。</li>
@@ -998,7 +1012,7 @@ Python中，最基本的数据结构为序列（sequence）。
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">12.1k</span>
+                <span class="white-color">15.7k</span>
             
 
             

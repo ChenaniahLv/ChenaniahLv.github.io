@@ -467,21 +467,24 @@
 <h2 id="3-2-设置字符串的格式：精简版"><a href="#3-2-设置字符串的格式：精简版" class="headerlink" title="3.2 设置字符串的格式：精简版"></a>3.2 设置字符串的格式：精简版</h2><p>Python新手可能不会用到所有的Python字符串格式设置选项，因此这里先介绍精简版。如果想了解详情，可参阅3.3。</p>
 <p>Python提供了多种字符串格式设置方法：</p>
 <ol>
-<li>使用字符串格式设置运算符——百分号（类似于C语言）：在%左边指定一个字符串（格式字符串），并在右边指定要设置其格式的值。指定其格式的值时，可使用单个值（如字符串或数字），可使用元组（如果要设置多个值的格式），还可以使用字典（第四章），其中最常见的是元组。<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> x <span class="token operator">=</span> <span class="token string">"Hello, %s. %s enough for ya?"</span>
+<li><p>使用字符串格式设置运算符——百分号（类似于C语言）：在%左边指定一个字符串（格式字符串），并在右边指定要设置其格式的值。指定其格式的值时，可使用单个值（如字符串或数字），可使用元组（如果要设置多个值的格式），还可以使用字典（第四章），其中最常见的是元组。</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> x <span class="token operator">=</span> <span class="token string">"Hello, %s. %s enough for ya?"</span>
 <span class="token operator">>></span><span class="token operator">></span> values <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">'world'</span><span class="token punctuation">,</span> <span class="token string">'Hot'</span><span class="token punctuation">)</span>
 <span class="token operator">>></span><span class="token operator">></span> x <span class="token operator">%</span> values
 <span class="token string">'Hello, world. Hot enough for ya?'</span>
 <span class="token comment" spellcheck="true">##上述格式字符串%s称为转换说明符，指出了将值插入什么地方。s意味着将其转换为字符串。其他说明符号将导致其他形式的转换。例如，%.3f将值的格式设置为包含3位小数的浮点数。</span>
 </code></pre>
 </li>
-<li>使用所谓的模板字符串，类似于UNIX shell的语法，旨在简化基本的格式设置机制。<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">from</span> string <span class="token keyword">import</span> Template
+<li><p>使用所谓的模板字符串，类似于UNIX shell的语法，旨在简化基本的格式设置机制。</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">from</span> string <span class="token keyword">import</span> Template
 <span class="token operator">>></span><span class="token operator">></span> tmpl <span class="token operator">=</span> Template<span class="token punctuation">(</span><span class="token string">"Hello, $who! $what enough for ya?"</span><span class="token punctuation">)</span>
 <span class="token operator">>></span><span class="token operator">></span> tmpl<span class="token punctuation">.</span>substitute<span class="token punctuation">(</span>who<span class="token operator">=</span><span class="token string">"Mars"</span><span class="token punctuation">,</span> what<span class="token operator">=</span><span class="token string">"Dusty"</span><span class="token punctuation">)</span>
 <span class="token string">'Hello, Mars! Dusty enough for ya?'</span>
 <span class="token comment" spellcheck="true">##包含等号的参数称为关键字参数（第六章）。在字符串格式设置中，可将关键字参数视为一种向命名替换字段提供值的方式</span>
 </code></pre>
 </li>
-<li>编写新代码时，应选择字符串方法format，它融合并强化了早期方法的优点。使用这种方法时，每个替换字符都用花括号括起，其中可能包含名称，还可能包含有关如何对相应的值进行转换和格式设置的信息。<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">##在最简单的情况下，替换字段没有名称或将索引用作名称。</span>
+<li><p>编写新代码时，应选择字符串方法format，它融合并强化了早期方法的优点。使用这种方法时，每个替换字符都用花括号括起，其中可能包含名称，还可能包含有关如何对相应的值进行转换和格式设置的信息。</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">##在最简单的情况下，替换字段没有名称或将索引用作名称。</span>
 <span class="token operator">>></span><span class="token operator">></span> <span class="token string">"{}, {} and {}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span><span class="token string">"first"</span><span class="token punctuation">,</span> <span class="token string">"second"</span><span class="token punctuation">,</span> <span class="token string">"third"</span><span class="token punctuation">)</span>
 <span class="token string">'first, second and third'</span>
 <span class="token operator">>></span><span class="token operator">></span> <span class="token string">"{0}, {1} and {2}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span><span class="token string">"first"</span><span class="token punctuation">,</span> <span class="token string">"second"</span><span class="token punctuation">,</span> <span class="token string">"third"</span><span class="token punctuation">)</span>
@@ -500,28 +503,35 @@
 <span class="token operator">>></span><span class="token operator">></span> <span class="token string">"Euler's constant is roughly {e}."</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>e<span class="token operator">=</span>e<span class="token punctuation">)</span>
 <span class="token string">"Euler's constant is roughly 2.718281828459045."</span>
 </code></pre>
-<h2 id="3-3-设置字符串的格式：完整版"><a href="#3-3-设置字符串的格式：完整版" class="headerlink" title="3.3 设置字符串的格式：完整版"></a>3.3 设置字符串的格式：完整版</h2>这里的基本思想是对字符串调用方法format，并提供要设置其格式的值。字符串包含有关如何设置格式的信息，而这些信息是使用一种微型格式指定语言（mini-language）指定的。每个值都被插入字符串中，以替换用花括号括起的替换字段。要在最终结果中包括花括号，可在格式字符串中使用两个花括号（即）来指定。<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token string">"{{包含花括号的示例}}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</li>
+</ol>
+<h2 id="3-3-设置字符串的格式：完整版"><a href="#3-3-设置字符串的格式：完整版" class="headerlink" title="3.3 设置字符串的格式：完整版"></a>3.3 设置字符串的格式：完整版</h2><p>这里的基本思想是对字符串调用方法format，并提供要设置其格式的值。字符串包含有关如何设置格式的信息，而这些信息是使用一种微型格式指定语言（mini-language）指定的。每个值都被插入字符串中，以替换用花括号括起的替换字段。要在最终结果中包括花括号，可在格式字符串中使用两个花括号（即）来指定。</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token string">"{{包含花括号的示例}}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token string">'{包含花括号的示例}'</span>
 </code></pre>
-在格式字符串中，最激动人心的部分为替换字段。替换字段由如下部分组成，其中每个部分都是可选的。</li>
-</ol>
+<p>在格式字符串中，最激动人心的部分为替换字段。替换字段由如下部分组成，其中每个部分都是可选的。</p>
 <ul>
 <li>字段名：索引或标识符，指出要设置哪个值的格式并使用结果来替换该字段。除指定值外，还可指定值的特定部分，如列表的元素。</li>
 <li>转换标志：跟在叹号后面的单个字符。当前支持的字符包括r（表示repr）、s（表示str）和a（表示ascii）。如果你指定了转换标志，将不使用对象本身的格式设置机制，而是使用指定的函数将对象转换为字符串，再做进一步的格式设置。</li>
-<li>格式说明符：跟在冒号后面的表达式（这种表达式是使用微型格式指定语言表示的）。格式说明符让我们能够详细地指定最终的格式，包括格式类型（如字符串、浮点数或十六进制数），字段宽度和数的精度，如何显示符号和千位分隔符，以及各种对其和填充方式。<h3 id="3-3-1-替换字段名"><a href="#3-3-1-替换字段名" class="headerlink" title="3.3.1 替换字段名"></a>3.3.1 替换字段名</h3>在最简单的情况下，只需向format提供要设置其格式的未命名参数，并在格式字符串中使用未命名字段。此时，将按顺序将字段和参数配对。你还可以给参数指定名称，这种参数将被用于相应的替换字段中。并且可以混合使用这两种方法。<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token string">"{foo} {} {bar} {}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> bar<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> foo<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">)</span>
+<li>格式说明符：跟在冒号后面的表达式（这种表达式是使用微型格式指定语言表示的）。格式说明符让我们能够详细地指定最终的格式，包括格式类型（如字符串、浮点数或十六进制数），字段宽度和数的精度，如何显示符号和千位分隔符，以及各种对其和填充方式。</li>
+</ul>
+<h3 id="3-3-1-替换字段名"><a href="#3-3-1-替换字段名" class="headerlink" title="3.3.1 替换字段名"></a>3.3.1 替换字段名</h3><p>在最简单的情况下，只需向format提供要设置其格式的未命名参数，并在格式字符串中使用未命名字段。此时，将按顺序将字段和参数配对。你还可以给参数指定名称，这种参数将被用于相应的替换字段中。并且可以混合使用这两种方法。</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token string">"{foo} {} {bar} {}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> bar<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> foo<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">)</span>
 <span class="token string">'3 1 4 2'</span>
 <span class="token comment" spellcheck="true">##还可通过索引来指定要在哪个字段中使用相应的未命名参数，这样可不按顺序使用未命名参数：</span>
 <span class="token operator">>></span><span class="token operator">></span> <span class="token string">"{foo} {1} {bar} {0}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> bar<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> foo<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">)</span>
 <span class="token string">'3 2 4 1'</span>
 <span class="token comment" spellcheck="true">##然而，不能同时使用手工编号和自动编号，因为这样很快就会变得混乱不堪。</span>
 </code></pre>
-并非只能使用提供的值本身，而是可以访问其组成部分（就像在常规Python代码中一样）。如下所示：<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">import</span> math
+<p>并非只能使用提供的值本身，而是可以访问其组成部分（就像在常规Python代码中一样）。如下所示：</p>
+<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">import</span> math
 <span class="token operator">>></span><span class="token operator">></span> tmpl <span class="token operator">=</span> <span class="token string">"The {mod.__name__} module defines the value {mod.pi} for π"</span><span class="token comment" spellcheck="true">##name两端为各两个下划线</span>
 <span class="token operator">>></span><span class="token operator">></span> tmpl<span class="token punctuation">.</span>format<span class="token punctuation">(</span>mod<span class="token operator">=</span>math<span class="token punctuation">)</span>
 <span class="token string">'The math module defines the value 3.141592653589793 for π'</span>
 <span class="token comment" spellcheck="true">##如你所见，可使用索引，还可以使用句点表示法来访问导入模块中的方法、属性、变量和函数（看起来很怪异的变量__name__包含指定模块中的名称）。</span>
 </code></pre>
-<h3 id="3-3-2-基本转换"><a href="#3-3-2-基本转换" class="headerlink" title="3.3.2 基本转换"></a>3.3.2 基本转换</h3>指定要在字段中包含的值后，就可以添加有关如何设置其格式的指令了。</li>
+<h3 id="3-3-2-基本转换"><a href="#3-3-2-基本转换" class="headerlink" title="3.3.2 基本转换"></a>3.3.2 基本转换</h3><p>指定要在字段中包含的值后，就可以添加有关如何设置其格式的指令了。</p>
+<ul>
 <li>首先可以提供一个转换标志。<pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"{pi!s} {pi!r} {pi!a}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>pi<span class="token operator">=</span><span class="token string">"π"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 π <span class="token string">'π'</span> <span class="token string">'\u03c0'</span>
 <span class="token comment" spellcheck="true">##上述三个标志（s、r和a）指定分别使用str、repr和ascii进行转换。函数str通常创建外观普通的字符串版本（这里没有对输入的字符串做任何处理）。函数repr尝试创建给定值的Python表示（这里是一个字符串字面量）。函数ascii创建只包含ASCII字符的表示。</span>
@@ -773,9 +783,9 @@ C<span class="token punctuation">:</span>\usr\bin\env
 <h2 id="3-5-小结"><a href="#3-5-小结" class="headerlink" title="3.5 小结"></a>3.5 小结</h2><p>本章介绍了字符串的两个重要方面：</p>
 <ul>
 <li>字符串格式设置：求模运算符（%）可用于将值合并为包含转换标志（如%s）的字符串，这让你能够以众多方式设置值的格式，如左对齐或右对齐，指定字段宽度和精度，添加符号（正好或符号）以及在左边填充0等。</li>
-<li>字符串方法：字符串有很多方法，有些很有用（如split和join），有些很少用到（如istitle和capitalize）。<h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a><a href="https://github.com/ChenaniahLv/Python-Learning/tree/master/3Ch" target="_blank" rel="noopener">练习</a></h2></li>
+<li>字符串方法：字符串有很多方法，有些很有用（如split和join），有些很少用到（如istitle和capitalize）。</li>
 </ul>
-
+<h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a><a href="https://github.com/ChenaniahLv/Python-Learning/tree/master/3Ch" target="_blank" rel="noopener">练习</a></h2>
             </div>
             <hr>
 
@@ -957,24 +967,22 @@ C<span class="token punctuation">:</span>\usr\bin\env
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/02/13/python-xue-xi-di-3-zhang-shi-yong-zi-fu-chuan/">
+                <a href="/2019/02/14/python-xue-xi-di-4-zhang-dang-suo-yin-xing-bu-tong-shi-zi-dian/">
                     <div class="card-image">
                         
-                        <img src="https://s2.ax1x.com/2019/02/13/k02dVs.jpg" class="responsive-img" alt="Python学习第3章-使用字符串">
+                        <img src="https://s2.ax1x.com/2019/02/13/k02dVs.jpg" class="responsive-img" alt="Python学习第4章-当索引行不通时：字典">
                         
-                        <span class="card-title">Python学习第3章-使用字符串</span>
+                        <span class="card-title">Python学习第4章-当索引行不通时：字典</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">第三章-使用字符串本章将介绍如何使用字符串来设置其他值的格式（比如便于打印），并大致了解字符串方法可完成的重要任务，如拆分、合并和查找等。
-3.1 字符串基本操作所有标准序列操作（索引、切片、乘法、成员资格审查、长度、最小值、最大值）都适用</div>
+                    <div class="summary">第四章-当索引行不通时：字典需要将一系列值组合成数据结构并通过编号来访问各个值时，列表很有用。本章介绍一种可通过名称来访问其各个值的数据结构。这种数据结构称为映射（mapping）。字典是Python中唯一的内置映射类型，其中的值不按顺序排</div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-13
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-14
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -987,7 +995,6 @@ C<span class="token punctuation">:</span>\usr\bin\env
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1164,7 +1171,7 @@ Python中，最基本的数据结构为序列（sequence）。
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">12.1k</span>
+                <span class="white-color">15.7k</span>
             
 
             

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ChenaniahLv.github.io/"/>
-  <updated>2019-02-13T10:11:44.100Z</updated>
+  <updated>2019-02-14T05:43:12.789Z</updated>
   <id>http://ChenaniahLv.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python学习第4章-当索引行不通时：字典</title>
+    <link href="http://ChenaniahLv.github.io/2019/02/14/python-xue-xi-di-4-zhang-dang-suo-yin-xing-bu-tong-shi-zi-dian/"/>
+    <id>http://ChenaniahLv.github.io/2019/02/14/python-xue-xi-di-4-zhang-dang-suo-yin-xing-bu-tong-shi-zi-dian/</id>
+    <published>2019-02-14T05:35:19.000Z</published>
+    <updated>2019-02-14T05:43:12.789Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;第四章-当索引行不通时：字典&quot;&gt;&lt;a href=&quot;#第四章-当索引行不通时：字典&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="http://ChenaniahLv.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://ChenaniahLv.github.io/tags/Python/"/>
+    
+      <category term="教程" scheme="http://ChenaniahLv.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="学习笔记" scheme="http://ChenaniahLv.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python学习第3章-使用字符串</title>
     <link href="http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-3-zhang-shi-yong-zi-fu-chuan/"/>
     <id>http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-3-zhang-shi-yong-zi-fu-chuan/</id>
     <published>2019-02-13T10:05:28.000Z</published>
-    <updated>2019-02-13T10:11:44.100Z</updated>
+    <updated>2019-02-14T05:38:30.365Z</updated>
     
     <summary type="html">
     
@@ -51,7 +81,7 @@
     <link href="http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-2-zhang-lie-biao-he-yuan-zu/"/>
     <id>http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-2-zhang-lie-biao-he-yuan-zu/</id>
     <published>2019-02-13T09:55:37.000Z</published>
-    <updated>2019-02-13T10:11:16.635Z</updated>
+    <updated>2019-02-14T05:41:41.663Z</updated>
     
     <summary type="html">
     
@@ -81,7 +111,7 @@
     <link href="http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-1-zhang-kuai-su-shang-shou-ji-chu-zhi-shi/"/>
     <id>http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-1-zhang-kuai-su-shang-shou-ji-chu-zhi-shi/</id>
     <published>2019-02-13T09:37:56.000Z</published>
-    <updated>2019-02-13T09:51:47.801Z</updated>
+    <updated>2019-02-14T05:46:30.171Z</updated>
     
     <summary type="html">
     
