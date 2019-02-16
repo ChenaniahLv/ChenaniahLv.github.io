@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ChenaniahLv.github.io/"/>
-  <updated>2019-02-14T05:43:12.789Z</updated>
+  <updated>2019-02-16T14:19:13.594Z</updated>
   <id>http://ChenaniahLv.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python学习第5章-条件、循环和其他语句</title>
+    <link href="http://ChenaniahLv.github.io/2019/02/16/python-xue-xi-di-5-zhang-tiao-jian-xun-huan-he-qi-ta-yu-ju/"/>
+    <id>http://ChenaniahLv.github.io/2019/02/16/python-xue-xi-di-5-zhang-tiao-jian-xun-huan-he-qi-ta-yu-ju/</id>
+    <published>2019-02-16T14:15:56.000Z</published>
+    <updated>2019-02-16T14:19:13.594Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;第五章-条件、循环和其他语句&quot;&gt;&lt;a href=&quot;#第五章-条件、循环和其他语句&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="http://ChenaniahLv.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://ChenaniahLv.github.io/tags/Python/"/>
+    
+      <category term="教程" scheme="http://ChenaniahLv.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="学习笔记" scheme="http://ChenaniahLv.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>Python学习第4章-当索引行不通时：字典</title>
@@ -81,7 +111,7 @@
     <link href="http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-2-zhang-lie-biao-he-yuan-zu/"/>
     <id>http://ChenaniahLv.github.io/2019/02/13/python-xue-xi-di-2-zhang-lie-biao-he-yuan-zu/</id>
     <published>2019-02-13T09:55:37.000Z</published>
-    <updated>2019-02-14T05:41:41.663Z</updated>
+    <updated>2019-02-16T14:19:35.359Z</updated>
     
     <summary type="html">
     
